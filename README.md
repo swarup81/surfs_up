@@ -1,12 +1,18 @@
 # surfs_up
 June_results = session.query(Measurement.date, Measurement.prcp).\
     filter(extract('month', Measurement.date)==6).all()
-june_df = pd.DataFrame(June_results,columns=[ "date","June prcp"])
+june_temps_list = [temp.prcp for temp in June_results]
+june_temps_list
+june_df = pd.DataFrame(june_temps_list,columns=[ "June prcp"])
 june_df.describe()
 Dec_results = session.query(Measurement.date, Measurement.prcp).\
     filter(extract('month', Measurement.date)==12).all()
-dec_df = pd.DataFrame(Dec_results, columns=[ "date","Dec prcp"])
+dec_temps_list = [temp.prcp for temp in Dec_results]
+dec_temps_list
+dec_df = pd.DataFrame(dec_temps_list, columns=[ "Dec prcp"])
+print(dec_df)
 dec_df.describe()
+june_stats = june_df.describe()
+dec_stats = dec_df.describe()
 
-<img width="610" alt="Screen Shot 2022-04-28 at 10 40 55 AM" src="https://user-images.githubusercontent.com/100738688/165778426-fd74fa92-b01b-40c2-a9d4-6970be922f56.png">
-
+img width="636" alt="Screen Shot 2022-04-28 at 10 54 05 AM" src="https://user-images.githubusercontent.com/100738688/165781489-ab73fe25-91f7-40c4-8c1f-152fbfb89cd4.png">
