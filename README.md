@@ -1,13 +1,13 @@
 # surfs_up
 June_results = session.query(Measurement.date, Measurement.prcp).\
-       filter(extract('month', Measurement.date)==6).all()
+     filter(extract('month', Measurement.date)==6).all()
 june_temps_list = [temp.prcp for temp in June_results]
 june_temps_list
 june_df = pd.DataFrame(june_temps_list,columns=[ "June prcp"])
 june_df.describe()
 
 Dec_results = session.query(Measurement.date, Measurement.prcp).\
-      filter(extract('month', Measurement.date)==12).all()
+    filter(extract('month', Measurement.date)==12).all()
 dec_temps_list = [temp.prcp for temp in Dec_results]
 dec_temps_list
 dec_df = pd.DataFrame(dec_temps_list, columns=[ "Dec prcp"])
