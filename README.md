@@ -8,7 +8,7 @@ The project analyzes weather conditions in June and December and draws summary s
 
 * When we look at the minimum temperatures of June (64F) and Dec (56F), the dec month has a lower temperature, A few days in a month can get chilly;  ice cream will be the least option.
 
-*<img width="210" alt="Screen Shot 2022-04-28 at 4 34 57 PM" src="https://user-images.githubusercontent.com/100738688/165841139-01be496a-1df8-4346-bcde-1f7b0d11eb1d.png">
+<img width="210" alt="Screen Shot 2022-04-28 at 4 34 57 PM" src="https://user-images.githubusercontent.com/100738688/165841139-01be496a-1df8-4346-bcde-1f7b0d11eb1d.png">
 
 <img width="179" alt="Screen Shot 2022-04-28 at 4 36 09 PM" src="https://user-images.githubusercontent.com/100738688/165841285-2a5665bc-8783-40a4-aeb6-c873ee2213d8.png">
 
