@@ -1,27 +1,25 @@
 # surfs_up
-June_results = session.query(Measurement.date, Measurement.prcp).\
-     filter(extract('month', Measurement.date)==6).all()
-     
-june_temps_list = [temp.prcp for temp in June_results]
-june_temps_list
+# Overview of the analysis:
+## purpose:
 
-june_df = pd.DataFrame(june_temps_list,columns=[ "June prcp"])
+The project analyzes weather conditions in June and December and draws summary statistics to determine if the surf and ice cream shop business is sustainable year-round.
 
-june_df.describe()
+# Results:
 
-Dec_results = session.query(Measurement.date, Measurement.prcp).\
-    filter(extract('month', Measurement.date)==12).all()
-    
-dec_temps_list = [temp.prcp for temp in Dec_results]
-dec_temps_list
+* When we look at the minimum temperatures of June (64) and Dec (56), the dec month has a lower temperature, which may not be suitable for surfing and ice cream.
 
-dec_df = pd.DataFrame(dec_temps_list, columns=[ "Dec prcp"])
+* There is little more variation in December regarding the standard deviation of June(3.26) and Dec(3.75)months. The temperature range of June is small; hence, it is warmer than dec as the range is large and gets colder.
 
-dec_df.describe()
+* The temperatures recorded in Dec (1517) are less when compared to June(1700); still, Dec has a good weather conditions for both surfing and ice cream.
 
-june_stats = june_df.describe()
+ 
 
-dec_stats = dec_df.describe()
+#summary:
+The weather in June and December are pretty similar; however, December has the lowest temperature compared to June. The range of temperatures in June is warmer than the range of colder temperatures in Dec. Based on June and Dec., Oahu may be a good place for surfing and ice cream shop.
+
+* I want to perform an additional query to gather more weather data for June and December would be the level of precipitation for each month and compare how the precipitation level in the summer and winter impact the surfing and ice cream business.
+
+*Another query would be on temperatures recorded by the station for each month. They can analyze min and max temperature of the nearby station where they want to open the shop. 
 
 <img width="636" alt="Screen Shot 2022-04-28 at 10 54 05 AM" src="https://user-images.githubusercontent.com/100738688/165781829-d07388d3-9dc0-4d21-a531-950f73623775.png">
 
