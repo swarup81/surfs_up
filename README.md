@@ -31,7 +31,7 @@ The weather in June and December are pretty similar; however, December has the l
 *Another query would be on temperatures recorded by the station for each month. They can analyze min and max temperature of the nearby station where they want to open the shop. 
 
 
-<img width="810" alt="Screen Shot 2022-04-28 at 11 11 59 AM" src="https://user-images.githubusercontent.com/100738688/165785250-b1186db5-119c-4006-8413-f7399b5d3b65.png">
+<img width="805" alt="Screen Shot 2022-04-30 at 2 23 19 PM" src="https://user-images.githubusercontent.com/100738688/166117876-c764ac97-4d11-475b-9a6e-f242ae7f4a63.png">
 
 
 
